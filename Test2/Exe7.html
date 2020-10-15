@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 7</title>
+	<style type="text/css">
+		#grid, #grid1{
+			display: grid;
+			grid-template-columns: auto auto auto auto auto auto auto;
+			background-color: #99b3ff;		
+			margin: auto 200px;
+		}
+
+		#title{
+			margin: auto 200px;
+			font-size: 1.7rem;
+			color: #3366ff;
+		}
+
+		#grid1{
+			font-size: 2rem;
+		}
+
+		#grid{
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+		#grid div ,#grid1 div{
+			padding: 20px;
+			text-align: center;
+		}
+	</style>	
+</head>
+<body>
+	<div id="title"></div>
+	<div id="grid1">
+			<div>Sun</div>
+			<div>Mon</div>
+			<div>Tue</div>
+			<div>Wed</div>
+			<div>Thu</div>
+			<div>Fri</div>
+			<div>Sat</div>
+	</div>
+	<div id="grid">
+
+	</div>
+	</table>
+
+
+	<script type="text/javascript">
+		let days = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+		let months = [{
+			name:'January',
+			day: 31
+		},{
+			name:'February',
+			day: 28
+		},{
+			name:'March',
+			day: 30
+		},{
+			name:'April',
+			day: 30
+		},{
+			name:'May',
+			day: 31
+		},{
+			name:'June',
+			day: 30
+		},{
+			name:'July',
+			day: 31
+		},{
+			name:'August',
+			day: 31
+		},{
+			name:'September',
+			day: 30
+		},{
+			name:'October',
+			day: 31
+		},{
+			name:'November',
+			day: 30
+		},{
+			name:'December',
+			day: 31
+		}];
+
+		let date = new Date();
+		let get_day = date.getDay();
+		let get_date = date.getDate();
+		let get_month = date.getMonth();
+		let grid = document.getElementById('grid');
+		let title = document.getElementById('title');
+		let html="";
+		let d = 0;
+
+		title.innerHTML = `<h2>${months[get_month].name}&nbsp;&nbsp;&nbsp;&nbsp;${date.getFullYear()} </h2>`;
+
+		while(d !=get_day){
+			html+=`
+			<div></div>
+			`
+			d++;
+		}
+		for(var j = 1 ;j<= months[get_month].day;j++){
+			if(j == (get_date)){
+				html+=`
+			<div style="background-color:#3366ff;">${j}</div>
+			`
+			}else{
+				html+=`
+			<div>${j}</div>
+			`
+			}			
+		}
+		grid.innerHTML = html;
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+nav a{
+	text-decoration: none;
+	color: #009999;	
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding:0px 20px;
+}
+
+nav li {
+  display: inline;
+}
+
+.clear{
+	clear: both;
+}
+
+.img_style{
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	object-fit:  cover;	
+}
+
+.s_div{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+.s_div div{
+	margin:20px;
+}
+
+.edit_button{
+	font-size: 12px;
+	border: 1px #000 solid;
+	margin: 0px 20px;
+	padding: 5px;
+}
+
+.t_div{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto;
+	grid-row-gap: 20px;
+	grid-column-gap: 20px;
+}
+
+.t_div img{
+	width: 430px;
+	height: 250px;
+	object-fit:  cover;
+}

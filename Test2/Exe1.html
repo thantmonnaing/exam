@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 1</title>
+</head>
+<body>
+	<div style="border: 3px #000 solid;margin: 50px 400px;padding: 0px 20px 10px 10px;">
+		<h1 style="text-align: center;margin: 0px;">Form Example</h1>
+		<table border="3" style="background-color: #c2d6d6;">
+			<tbody>
+				<tr>
+					<td>First Name *</td>
+					<td style="padding-right: 10px;"><input type="text" name="first_name"></td>
+				</tr>
+				<tr>
+					<td>Last Name *</td>
+					<td><input type="text" name="last_name"></td>
+				</tr>
+				<tr>
+					<td>Password *</td>
+					<td><input type="password" name="password"></td>
+				</tr>
+				<tr>
+					<td>Confirm Password *</td>
+					<td><input type="password" name="comfirm_password"></td>
+				</tr>
+				<tr>
+					<td>Enter Your Hobbies *</td>
+					<td>
+						<select>
+							<option value="travelling">Travelling</option>
+							<option value="gaming">Gaming</option>
+							<option value="riding">Riding</option>
+							<option value="sleeping">Sleeping</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Notified by Email:</td>
+					<td><input type="checkbox" name="check1" value="email" checked></td>
+				</tr>
+				<tr>
+					<td>Gender *</td>
+					<td>
+						<input type="radio" id="male" name="gender" value="male" checked>
+						<label for="male">Male</label><br>
+						<input type="radio" id="female" name="gender" value="female">
+						<label for="female">Female</label><br>
+					</td>
+				</tr>
+				<tr>
+					<td>Address *<br><i>(Please fill your address in "no, street, state, city")</i></td>
+					<td><textarea rows="3"></textarea></td>
+				</tr>
+				<tr> 
+					<td><button>Submit Form</button></td>
+					<td><button>Clear Form</button></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 9</title>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<style type="text/css">
+		.change_text_color{
+			font-size: 50px;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Click Here</h1>
+<script type="text/javascript">
+		$(document).ready(function(){
+			 $("h1").click(function(){
+			    $("h1").toggleClass("change_text_color");
+			  });
+		})
+	</script>
+</body>
+</html>

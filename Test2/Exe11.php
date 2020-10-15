@@ -8,11 +8,11 @@ echo '
 		 	</tr>
 		 	<tr height="40px" width="300px">
 			 	<td>Salary of Mr b . is</td>
-			 	<td>1000$</td>
+			 	<td>1200$</td>
 		 	</tr>
 		 	<tr height="40px" width="300px">
 			 	<td>Salary of Mr C . is</td>
-			 	<td>1000$</td>
+			 	<td>1400$</td>
 		 	</tr>
 
 	';
